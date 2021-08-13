@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: 'poppins', 'Comfortaa', sans-serif;
+}
+.username {
+    color: hsl(270, 100%, 40%);
+}
+
+/* PROFIL HEADER */
+.profilHeader {
+    margin: 5vh 0 0 0;
+    height: 16vh;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profilHeader .username {
+    font-size: 45px;
+    font-weight: 900;
+}
+.profilHeader span {
+    font-weight: bold;
+    font-size: 25px;
+    height: 20px;
+}
+.profilHeader .creationDate {
+    font-size: 13px;
+    opacity: .5;
+}
+/* PROFIL DATA COUNTER */
+.userDataCounter {
+    padding: 0 10%;
+    display: flex;
+}
+.userDataCounter div {
+    margin-right: 50px;
+}
+.userDataCounter .dataCounter {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: -10px;
+    opacity: 0;
+}
+/* PROFIL DATA CONTAINER */
+.profilDataContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6vh;
+}
+/* PROFIL SECTION CONTAINERS */
+.profilSectionContainer {
+    width: 35%;
+    max-height: 525px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+}
+/* PROFIL TITLES */
+.profilSectionTitle {
+    width: 100%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profilSectionTitle p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.profilSectionTitle .rienAVoir {
+    font-weight: normal;
+    font-size: 14px;
+    opacity: .5;
+    margin-top: -5px;
+}
+/* MESSSAGE HISTORY */
+.emptyMsgAlert {
+    margin: 10vh 0;
+    opacity: .5;
+    display: none;
+}
+.profilMsgHistoryContainer{
+    box-shadow: 0px 0px 13px 2px rgb(0 0 0 / 20%);
+    /* border-style: solid;
+    border-color: rgb(223, 227, 228); */
+}
+.profilMsgHistory {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(198, 195, 200);
+    border-radius: 15px;
+}
+.msgCard {
+    width: 90%;
+    padding: 13px 5%;
+    font-size: 14px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color .1s;
+    background-color: rgba(128, 128, 128, 0.1) !important;
+    margin-bottom: 1px;
+}
+.msgCard:hover {
+    background-color: rgb(245, 245, 245);
+}
+.msgCard .msgTime {
+    opacity: .6;
+    font-size: 10px;
+}
+.msgCard .msgContent {
+    padding-right: 20px;
+    text-align: justify;
+}
+.profilBadgesContainer{
+    box-shadow: 0px 0px 13px 1px rgb(0 0 0 / 20%);
+    /* border-style: solid;
+    border-color: rgb(223, 227, 228); */
+}

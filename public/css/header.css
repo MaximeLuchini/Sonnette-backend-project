@@ -1,0 +1,44 @@
+/* HEADER */
+header {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+a {
+    text-decoration: none;
+    color: rgb(102, 0, 204);
+    font-family: 'Comfortaa', 'poppins', sans-serif;
+}
+#divConnexion {
+    margin-right: 10px;
+}
+#divLogo h1 {
+    transition: .3s;
+}
+#divLogo h1:hover {
+    font-size: 35px;
+}
+#disconnectionBtn {
+    background-color: rgb(102, 0, 204);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 7px 12px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+#userIcon {
+    width: 31px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.unclickableHamb{
+    padding-right: 113.19px;
+}
+

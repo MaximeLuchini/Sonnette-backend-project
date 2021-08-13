@@ -1,0 +1,81 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.rewardsTitle {
+    height: 10vh;
+    color: rgb(102, 0, 204);
+    font-size: 30px;
+    margin-left: 15%;
+    line-height: 290%;
+}
+.rewardsContainer {
+    padding: 0 10%;
+    width: 80%;
+    height: 83vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.reward {
+    padding: 15px;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 10px rgba(97, 97, 97, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    position: relative;
+}
+.locked p {
+    color: gray;
+}
+.unlocked p {
+    color: rgb(102, 0, 204);
+}
+.reward button {
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    padding: 7px 12px;
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.unlocked button {
+    background-color: rgb(102, 0, 204);
+    cursor: pointer;
+}
+.locked button {
+    background-color: grey;
+    cursor: not-allowed;
+}
+.reward .rewardPoints {
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    opacity: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(102, 0, 204) !important;
+}
+@keyframes rewardPointsAnimation {
+    0% {
+        opacity: 0;
+        top: 50%;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 20%;
+    }
+}
+

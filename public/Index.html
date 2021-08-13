@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" media="screen and (max-width: 1024px)" href="../css/responsive/loginResponsive.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/logo_sonnette.png">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+        <title class="fontStyle">Cod'Ring - Connexion</title>
+    </head>
+    <body>
+        
+        <header>
+            <img id="logo" src="img/logo_sonnette.png" alt="Logo">
+            <div id="divLogo">
+                <h1 class="fontStyle" id="title">Cod' Ring</h1>
+            </div>
+        </header>
+
+        <div class="formContainer">
+            <form>
+                <h2 class="fontStyle">Connectez-vous</h2>
+                <input type="email" id="email" required placeholder="Email">
+                <input id="password" type="password" required placeholder="Mot de passe">
+                <div class="showPasswordContainer">
+                    <input class="checkbox" type="checkbox" id="checkbox" onclick="showPasswords()">
+                    <label class="fontStyle" for="checkbox">Montrer le mot de passe</label>
+                </div>
+                <button class="fontStyle" id="connectionBtn">Connexion</button>
+                <p class="msgContainer"></p>
+                <p class="fontStyle registerLink">Vous n'avez pas de compte ? <a href="html/register.html">S'inscrire</a></p>
+                <p class="fontStyle forgotPasswordLink"><a>Mot de passe oublié</a></p>
+            </form>
+            
+            <div class="forgotPasswordContainer">
+                <div class="forgotPassword">
+                    <img src="img/close.png" alt="Fermer" class="closeImg" onclick="document.querySelector('.forgotPasswordContainer').style.display = 'none'">
+                    <p>Saisir l'adresse mail de récupération</p>
+                    <input type="email" id="forgotPasswordInput" placeholder="Email">
+                    <button>Réinitialiser mon mot de passe</button>
+                    <p class="msg"></p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/RebootPasswordFunctions.js"></script>
+
+</html>

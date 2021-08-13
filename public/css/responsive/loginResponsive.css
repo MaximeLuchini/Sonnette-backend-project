@@ -1,0 +1,31 @@
+@media (max-width:414px){ 
+    #logo {
+        position: absolute;
+        left: -30px;
+        top: 10px;
+        height: 130%;
+    }
+    #logo {
+        position: absolute;
+        left: -30px;
+        top: 10px;
+    }
+    #divLogo h1 {
+        transition: .3s;
+        margin-top: 30%;
+    }
+}
+@media (max-width: 320px) {
+    #logo {
+        left: -25px;
+    }
+}
+@media (max-width:280px){
+    form {
+        width: 250px;
+    }
+    div#divLogo {
+        width: 200px;
+        margin-left: 30%;
+    }
+}

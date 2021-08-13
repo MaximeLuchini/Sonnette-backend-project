@@ -1,0 +1,31 @@
+{
+  "name": "sonnette",
+  "version": "1.0.0",
+  "description": "Cod-Ring",
+  "main": "private/server.js",
+  "dependencies": {
+    "@slack/events-api": "^3.0.0",
+    "@slack/web-api": "^6.1.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "get-audio-duration": "^2.0.3",
+    "jquery": "^3.6.0",
+    "mongoose": "^5.12.2",
+    "nodemon": "^2.0.12"
+  },
+  "scripts": {
+    "start": "nodemon private/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingfactory-by-itescia/Sonnette.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codingfactory-by-itescia/Sonnette/issues"
+  },
+  "homepage": "https://github.com/codingfactory-by-itescia/Sonnette#readme"
+}
